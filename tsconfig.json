@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "stripInternal": false,
+    "noEmit": true,
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@ckapp/rxjs": ["./src/index"],
+      "@ckapp/rxjs/math": ["./src/math/index"],
+      "@ckapp/rxjs/math/operators": ["./src/math/operators/index"]
+    }
+  }
+}

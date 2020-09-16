@@ -1,0 +1,65 @@
+{
+  "name": "@ckapp/rxjs",
+  "description": "A collection of RxJS extensions",
+  "version": "0.0.2-10",
+  "license": "MIT",
+  "author": "Chris",
+  "bugs": {
+    "url": "https://github.com/ckapps/math/issues"
+  },
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm5/index.js",
+  "es2015": "./lib/esm/index.js",
+  "types": "./lib/types/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build:clean": "shx rm -rf ./lib",
+    "compile": "tsc -b ./src/tsconfig.cjs.json ./src/tsconfig.esm.json ./src/tsconfig.esm5.json ./src/tsconfig.types.json",
+    "build:package": "npm-run-all build:clean compile",
+    "lint": "eslint .",
+    "release": "standard-version",
+    "release:pre": "npm run release -- --prerelease",
+    "test": "jest",
+    "test:coverage": "npm test -- --coverage"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/jest": "^26.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.1",
+    "shx": "^0.3.2",
+    "standard-version": "^9.0.0",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "files": [
+    "lib/cjs/**/!(*.tsbuildinfo)",
+    "lib/esm/**/!(*.tsbuildinfo)",
+    "lib/esm5/**/!(*.tsbuildinfo)",
+    "lib/types/**/!(*.tsbuildinfo)",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "dependencies": {
+    "@ckapp/math": "0.0.2-11",
+    "rxjs": "^6.6.3"
+  }
+}
