@@ -51,6 +51,8 @@
     "typescript": "^4.0.2"
   },
   "files": [
+    "**/*.d.ts",
+    "lib/cjs/**/!(*.tsbuildinfo)",
     "lib/cjs/**/!(*.tsbuildinfo)",
     "lib/esm/**/!(*.tsbuildinfo)",
     "lib/esm5/**/!(*.tsbuildinfo)",
