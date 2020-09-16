@@ -1,0 +1,38 @@
+name: Bump version (pre release)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    name: Bump version
+
+    if: "!contains(github.event.head_commit.author.name, 'Bump version')"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          persist-credentials: false
+          # otherwise, you will failed to push refs to dest repo
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+      - name: install
+        run: |
+          npm install -g npm@latest
+          npm ci
+      - name: Run standard-version
+        run: |
+          git config --global user.name "Bump version - ${{ github.repository }} (by ${{ github.actor }})"
+          git config --global user.email "${{ github.repository }}-version-bump@users.noreply.github.com"
+          npm run release:pre
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_ADMIN_PUSH_TOKEN }}
+          tags: true
