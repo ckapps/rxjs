@@ -41,12 +41,6 @@
     "ts-jest": "^26.3.0",
     "typescript": "^4.0.2"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "files": [
     "lib/cjs/**/!(*.tsbuildinfo)",
     "lib/esm/**/!(*.tsbuildinfo)",
