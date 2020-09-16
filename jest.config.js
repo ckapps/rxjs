@@ -10,4 +10,9 @@ module.exports = {
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
+  globals: {
+    'ts-jest': {
+      tsConfig: './src/tsconfig.spec.json',
+    },
+  },
 };
