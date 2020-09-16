@@ -18,8 +18,11 @@
   "sideEffects": false,
   "scripts": {
     "build:clean": "shx rm -rf ./lib",
-    "compile": "tsc -b ./src/tsconfig.cjs.json ./src/tsconfig.esm.json ./src/tsconfig.esm5.json ./src/tsconfig.types.json",
-    "build:package": "npm-run-all build:clean compile",
+    "compile": "tsc -b ./src/tsconfig.cjs.json ./src/tsconfig.esm.json ./src/tsconfig.esm5.json",
+    "declaration:compile": "tsc -b ./src/tsconfig.types.json",
+    "declaration:copy": "cp -a ./lib/types/. .",
+    "build:declaration": "npm-run-all declaration:compile declaration:copy",
+    "build:package": "npm-run-all build:clean compile build:declaration",
     "lint": "eslint .",
     "release": "standard-version",
     "release:pre": "npm run release -- --prerelease",
