@@ -57,8 +57,7 @@
     "CHANGELOG.md",
     "LICENSE",
     "package.json",
-    "README.md",
-    "tsconfig.json"
+    "README.md"
   ],
   "dependencies": {
     "@ckapp/math": "0.0.2-11",
