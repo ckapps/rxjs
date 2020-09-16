@@ -1,0 +1,6 @@
+# Artifacts
+lib
+coverage
+
+# Other files
+tsconfig.json
