@@ -3,7 +3,7 @@ name: Bump version (pre-release)
 on:
   push:
     branches:
-      - release/next*
+      - 'release/next*'
 
 jobs:
   bump:
