@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Bump version
 
+    # Prevent on version bump
     if: "!contains(github.event.head_commit.author.name, 'Bump version')"
 
     steps:
