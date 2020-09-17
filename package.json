@@ -21,11 +21,8 @@
     "compile": "tsc -b ./src/tsconfig.cjs.json ./src/tsconfig.esm.json ./src/tsconfig.esm5.json",
     "build:declarations": "tsc -b ./src/tsconfig.types.json",
     "build:fast": "npm-run-all build:clean compile",
-    "build:package": "npm-run-all build:clean compile build:declarations build:artefacts",
-    "build:artefacts": "npm-run-all copy:files copy:declarations",
+    "build:package": "npm-run-all build:clean compile build:declarations",
     "lint": "eslint .",
-    "copy:files": "cp -a ./lib/cjs/. .",
-    "copy:declarations": "cp -a ./lib/types/. .",
     "release": "standard-version",
     "release:pre": "npm run release -- --prerelease",
     "test": "jest",
@@ -51,7 +48,6 @@
     "typescript": "^4.0.2"
   },
   "files": [
-    "**/*.d.ts",
     "lib/cjs/**/!(*.tsbuildinfo)",
     "lib/cjs/**/!(*.tsbuildinfo)",
     "lib/esm/**/!(*.tsbuildinfo)",
