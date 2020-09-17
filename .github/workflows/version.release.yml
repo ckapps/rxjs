@@ -1,9 +1,9 @@
-name: Bump version (pre-release)
+name: Bump version
 
 on:
   push:
     branches:
-      - release/next*
+      - master
 
 jobs:
   bump:
@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --global user.name "Bump version - ${{ github.repository }} (by ${{ github.actor }})"
           git config --global user.email "${{ github.repository }}-version-bump@users.noreply.github.com"
-          npm run release:pre
+          npm run release
 
       - name: Push changes
         uses: ad-m/github-push-action@master
