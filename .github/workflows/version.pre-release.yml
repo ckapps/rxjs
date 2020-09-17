@@ -1,4 +1,4 @@
-name: Bump version (pre release)
+name: Bump version (pre-release)
 
 on:
   push:
@@ -23,9 +23,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v1
       - name: install
-        run: |
-          npm install -g npm@latest
-          npm ci
+        run: npm ci
       - name: Run standard-version
         run: |
           git config --global user.name "Bump version - ${{ github.repository }} (by ${{ github.actor }})"
