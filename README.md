@@ -9,16 +9,18 @@ A collection of RxJS extensions.
 ## Branches / Versions
 
 - [master](https://github.com/ckapps/rxjs/commits/master) - Contains the most recent and unreleased changes
-- [stable](https://github.com/ckapps/rxjs/tree/1.x) - Contains the latest version you'd get if you do `npm install @ckapp/rxjs`
+- [stable](https://github.com/ckapps/rxjs/tree/release/stable/1.x) - Contains the latest version you'd get if you do `npm install @ckapp/rxjs`
 
 Most PRs should be made to **master**.
+
+Check our [branching and release strategy](https://github.com/ckapps/.github/blob/master/docs/branching.md).
 
 ## Installation and Usage
 
 ### ES6 via npm
 
 ```sh
-npm install @ckapp/rxjs
+npm i @ckapp/rxjs
 ```
 
 ## Building/Testing
