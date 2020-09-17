@@ -63,7 +63,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@ckapp/math": "0.0.2-11",
-    "rxjs": "^6.6.3"
+    "@ckapp/math": "0.0.2-14",
+    "rxjs": "^6.4.0"
   }
 }
