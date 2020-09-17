@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/ckapps/rxjs/compare/v0.0.2-23...v0.0.2) (2020-09-17)
+
+
+### Bug Fixes
+
+* ci release workflow ([de8aa36](https://github.com/ckapps/rxjs/commit/de8aa3642d703e5ebc52fa2f5e02c27034c96c03))
+
 ### [0.0.2-23](https://github.com/ckapps/rxjs/compare/v0.0.2-22...v0.0.2-23) (2020-09-17)
 
 ### [0.0.2-22](https://github.com/ckapps/rxjs/compare/v0.0.2-21...v0.0.2-22) (2020-09-17)
