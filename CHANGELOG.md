@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2-20](https://github.com/ckapps/rxjs/compare/v0.0.2-19...v0.0.2-20) (2020-09-17)
+
+
+### Features
+
+* added observables from key events ([5681b00](https://github.com/ckapps/rxjs/commit/5681b007af83ae7a3f4d39117b1c11df8ba8c589))
+
 ### [0.0.2-19](https://github.com/ckapps/rxjs/compare/v0.0.2-18...v0.0.2-19) (2020-09-17)
 
 
