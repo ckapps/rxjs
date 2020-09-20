@@ -31,9 +31,7 @@ describe('time/interval-pausable', () => {
     it('should do nothing without signal', () => {
       const x = new Subject<boolean>();
 
-      const source$ = intervalPausable(x.asObservable(), 2, testScheduler).pipe(
-        take(4),
-      );
+      const source$ = intervalPausable(x.asObservable(), 2).pipe(take(4));
 
       testScheduler.run(({ expectObservable }) => {
         const expectedMarble = '-';
@@ -42,11 +40,9 @@ describe('time/interval-pausable', () => {
     });
 
     it('should behave like timer', () => {
-      const source$ = intervalPausable(
-        pausedSubject.asObservable(),
-        2,
-        testScheduler,
-      ).pipe(take(4));
+      const source$ = intervalPausable(pausedSubject.asObservable(), 2).pipe(
+        take(4),
+      );
 
       testScheduler.run(({ expectObservable }) => {
         const expectedMarble = '--a-b-c-(d|)';
@@ -55,7 +51,7 @@ describe('time/interval-pausable', () => {
     });
 
     it('should pause', () => {
-      const paused$ = timer(1, 4, testScheduler).pipe(toggle([false, true]));
+      const paused$ = timer(1, 4).pipe(toggle([false, true]));
       const source$ = intervalPausable(paused$, 1, testScheduler).pipe(take(7));
 
       testScheduler.run(({ expectObservable }) => {

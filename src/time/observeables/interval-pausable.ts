@@ -1,4 +1,4 @@
-import { async, EMPTY, Observable, SchedulerLike, timer } from 'rxjs';
+import { EMPTY, Observable, SchedulerLike, timer } from 'rxjs';
 import { switchMap, tap } from 'rxjs/operators';
 
 import { counterIncrease } from '../../math/operators';
@@ -15,8 +15,8 @@ import { counterIncrease } from '../../math/operators';
  */
 export function intervalPausable(
   paused$: Observable<boolean>,
-  period = 0,
-  scheduler: SchedulerLike = async,
+  period: number,
+  scheduler?: SchedulerLike,
 ): Observable<number> {
   let dueTime = period;
   let lastEmit: number = Date.now();
