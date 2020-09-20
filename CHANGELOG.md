@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/ckapps/rxjs/compare/v0.0.3...v0.0.4) (2020-09-20)
+
+
+### Features
+
+* add array operator at-index ([1049a3b](https://github.com/ckapps/rxjs/commit/1049a3b5edb80ae7fd454ee5b99dff95743e38ff))
+* add array operator toggle ([7e0e50e](https://github.com/ckapps/rxjs/commit/7e0e50ebd94a86d9e3ce4c910d6b442065500470))
+* add math operator counter-increase ([7b3c120](https://github.com/ckapps/rxjs/commit/7b3c1206f0c60d5d2cd67f27a9eee2dba9d4d0db))
+* add math operators modulo ([adbdff0](https://github.com/ckapps/rxjs/commit/adbdff0be182b0f17e9bc34a6f7172b8751b6927))
+* add meta operator emission-counter ([5ccfd06](https://github.com/ckapps/rxjs/commit/5ccfd06ba1ec6e4078475f975d2571e4e7a3f5b4))
+* add observable for pausable timer ([f264c38](https://github.com/ckapps/rxjs/commit/f264c38e8a38c684e855ce223f3522f7379ec804))
+
+
+### Bug Fixes
+
+* minor improvement on interval API ([e142479](https://github.com/ckapps/rxjs/commit/e142479188e127a5c63782d526244493d193f2e7))
+* remove emission-counter operator ([2201770](https://github.com/ckapps/rxjs/commit/220177026afdfe0320f8db27d1ff535be2e3d00b))
+
 ### [0.0.3](https://github.com/ckapps/rxjs/compare/v0.0.2...v0.0.3) (2020-09-17)
 
 ### [0.0.2](https://github.com/ckapps/rxjs/compare/v0.0.2-23...v0.0.2) (2020-09-17)
