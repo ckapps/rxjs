@@ -1,7 +1,7 @@
 {
   "name": "@ckapp/rxjs",
   "description": "A collection of RxJS extensions",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "author": "Chris",
   "bugs": {
