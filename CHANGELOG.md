@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/ckapps/rxjs/compare/v0.0.7...v0.0.8) (2020-11-08)
+
+
+### Features
+
+* **string:** add operator filter-ends-with ([581e9d3](https://github.com/ckapps/rxjs/commit/581e9d36539dbe1babca7b85efbb4c009159e900))
+* **string:** add operator filter-includes ([7539602](https://github.com/ckapps/rxjs/commit/7539602932d413179121187ba72575d8b9101e88))
+* **string:** add operator filter-starts-with ([0c57fde](https://github.com/ckapps/rxjs/commit/0c57fdef645deba39ac0917295d7f51ca3e214d5))
+
 ### [0.0.7](https://github.com/ckapps/rxjs/compare/v0.0.6...v0.0.7) (2020-11-08)
 
 ### [0.0.6](https://github.com/ckapps/rxjs/compare/v0.0.5...v0.0.6) (2020-11-08)
