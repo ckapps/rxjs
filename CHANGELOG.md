@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/ckapps/rxjs/compare/v0.0.5...v0.0.6) (2020-11-08)
+
+
+### Features
+
+* **array:** add operator map-filter ([c21931b](https://github.com/ckapps/rxjs/commit/c21931b676c05b3286135109676bb763c0e71f18))
+* **array:** add operator map-items ([b10be9e](https://github.com/ckapps/rxjs/commit/b10be9ed84a04a6980d158858812c34013512402))
+* **array:** add operator map-to-strings-that-end-with ([31400a9](https://github.com/ckapps/rxjs/commit/31400a9f3f49df77bf9ed41263c3717c26c90a51))
+* **array:** add operator map-to-strings-that-start-with ([2d24e70](https://github.com/ckapps/rxjs/commit/2d24e70b904617c16304ab4a464b5d67342b2b08))
+
 ### [0.0.5](https://github.com/ckapps/rxjs/compare/v0.0.4...v0.0.5) (2020-09-20)
 
 ### [0.0.4](https://github.com/ckapps/rxjs/compare/v0.0.3...v0.0.4) (2020-09-20)
