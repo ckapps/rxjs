@@ -4,6 +4,7 @@
     "module": "esnext",
     "importHelpers": true,
     "target": "es5",
-    "outDir": "../lib/esm5"
+    "outDir": "../lib/esm5",
+    "declaration": true
   }
 }
