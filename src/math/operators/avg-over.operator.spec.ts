@@ -24,4 +24,18 @@ describe('math/operators/avgOver', () => {
       expectObservable(source$).toBe(expectedMarble, expectedIngredients);
     });
   });
+
+  it('should average values', () => {
+    const source$ = of(1, 1, 2, 2, 3, 3).pipe(avgOver(2));
+
+    testScheduler.run(({ expectObservable }) => {
+      const expectedMarble = '(abc|)';
+      const expectedIngredients = {
+        a: 1,
+        b: 2,
+        c: 3,
+      };
+      expectObservable(source$).toBe(expectedMarble, expectedIngredients);
+    });
+  });
 });
