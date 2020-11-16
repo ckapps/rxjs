@@ -4,8 +4,8 @@
     "noEmit": false,
     "baseUrl": ".",
     "paths": {
-      "@ckapp/rxjs": ["./"],
-      "@ckapp/rxjs/*": ["./*"]
+      "@ckapp/rxjs-snafu": ["./"],
+      "@ckapp/rxjs-snafu/*": ["./*"]
     }
   },
   "include": ["./**/*.ts"],

@@ -1,5 +1,5 @@
 {
-  "name": "@ckapp/rxjs",
+  "name": "@ckapp/rxjs-snafu",
   "description": "A collection of RxJS extensions",
   "version": "0.0.10",
   "license": "MIT",
