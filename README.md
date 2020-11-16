@@ -2,9 +2,17 @@
 [![npm version](https://badge.fury.io/js/%40ckapp%2Frxjs.svg)](https://www.npmjs.com/@ckapp/rxjs)
 [![Coverage Status](https://coveralls.io/repos/github/ckapps/rxjs/badge.svg?branch=master)](https://coveralls.io/github/ckapps/rxjs?branch=master)
 
+<hr />
+
+#### 📦 packge moved 📢
+
+As so often in programming, naming this package just `@ckapp/rxjs` wasn't the best idea. To acknowledge that I messed this up, I decided to rename it to [`@ckapp/rxjs-snafu`](https://www.npmjs.com/package/@ckapp/rxjs-snafu)
+
+<hr />
+
 # @ckapp/rxjs
 
-A collection of RxJS extensions.
+A collection of extensions for the awesome [RxJS](https://www.npmjs.com/package/rxjs) library.
 
 ## Branches / Versions
 
