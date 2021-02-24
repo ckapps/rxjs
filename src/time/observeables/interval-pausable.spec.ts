@@ -1,13 +1,15 @@
-import { BehaviorSubject, Subject, timer } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { TestScheduler } from 'rxjs/testing';
 
 import { intervalPausable } from './interval-pausable';
-import { toggle } from '../../array/operators';
 
 describe('time/interval-pausable', () => {
   let testScheduler: TestScheduler;
-  let pausedSubject: BehaviorSubject<boolean>;
+
+  const pausedValues = {
+    a: true,
+    b: false,
+  };
   const expectedIngredients = {
     a: 0,
     b: 1,
@@ -19,8 +21,6 @@ describe('time/interval-pausable', () => {
   };
 
   beforeEach(() => {
-    pausedSubject = new BehaviorSubject<boolean>(false);
-
     testScheduler = new TestScheduler((actual, expected) => {
       // console.log('actual', actual);
       expect(actual).toEqual(expected);
@@ -29,33 +29,31 @@ describe('time/interval-pausable', () => {
 
   describe('create', () => {
     it('should do nothing without signal', () => {
-      const x = new Subject<boolean>();
-
-      const source$ = intervalPausable(x.asObservable(), 2).pipe(take(4));
-
-      testScheduler.run(({ expectObservable }) => {
+      testScheduler.run(({ expectObservable, cold }) => {
+        const paused$ = cold('-', pausedValues);
+        const source$ = intervalPausable(paused$, 2).pipe(take(4));
         const expectedMarble = '-';
         expectObservable(source$).toBe(expectedMarble, expectedIngredients);
       });
     });
 
     it('should behave like timer', () => {
-      const source$ = intervalPausable(pausedSubject.asObservable(), 2).pipe(
-        take(4),
-      );
+      testScheduler.run(({ expectObservable, cold }) => {
+        const paused$ = cold('b', pausedValues);
 
-      testScheduler.run(({ expectObservable }) => {
+        const source$ = intervalPausable(paused$, 2).pipe(take(4));
         const expectedMarble = '--a-b-c-(d|)';
         expectObservable(source$).toBe(expectedMarble, expectedIngredients);
       });
     });
 
     it('should pause', () => {
-      const paused$ = timer(1, 4).pipe(toggle([false, true]));
-      const source$ = intervalPausable(paused$, 1, testScheduler).pipe(take(7));
-
-      testScheduler.run(({ expectObservable }) => {
-        const expectedMarble = '--abc-----def-----(g|)';
+      testScheduler.run(({ expectObservable, cold }) => {
+        const paused$ = cold('b---a--b--a--b|', pausedValues);
+        const source$ = intervalPausable(paused$, 1, testScheduler).pipe(
+          take(7),
+        );
+        const expectedMarble = '-abc----de----f(g|)';
         expectObservable(source$).toBe(expectedMarble, expectedIngredients);
       });
     });

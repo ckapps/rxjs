@@ -9,5 +9,5 @@ import { counterIncrease, moduloBy } from '../../math/operators';
  */
 export function toggle<T>(values: T[]): OperatorFunction<unknown, T> {
   return obs$ =>
-    obs$.pipe(counterIncrease(1, -1), moduloBy(values.length), atIndex(values));
+    obs$.pipe(counterIncrease(1), moduloBy(values.length), atIndex(values));
 }
