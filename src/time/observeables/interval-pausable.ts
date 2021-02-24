@@ -34,6 +34,6 @@ export function intervalPausable(
     // Store last emit
     tap(() => (lastEmit = Date.now())),
     // Timer is reset when paused, so we need to count ourselves
-    counterIncrease(1, -1),
+    counterIncrease(1),
   );
 }

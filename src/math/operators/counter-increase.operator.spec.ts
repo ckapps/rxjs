@@ -20,11 +20,11 @@ describe('math/operators/counter-increase', () => {
       testScheduler.run(({ expectObservable }) => {
         const expectedMarble = '(abcde|)';
         const expectedIngredients = {
-          a: increase,
-          b: increase * 2,
-          c: increase * 3,
-          d: increase * 4,
-          e: increase * 5,
+          a: 0,
+          b: increase * 1,
+          c: increase * 2,
+          d: increase * 3,
+          e: increase * 4,
         };
 
         expectObservable(source$).toBe(expectedMarble, expectedIngredients);
@@ -38,11 +38,11 @@ describe('math/operators/counter-increase', () => {
     testScheduler.run(({ expectObservable }) => {
       const expectedMarble = '(abcde|)';
       const expectedIngredients = {
-        a: -5,
-        b: -4,
-        c: -3,
-        d: -2,
-        e: -1,
+        a: -6,
+        b: -5,
+        c: -4,
+        d: -3,
+        e: -2,
       };
 
       expectObservable(source$).toBe(expectedMarble, expectedIngredients);
