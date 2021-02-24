@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://github.com/ckapps/rxjs/compare/v0.0.16...v0.0.17) (2021-02-24)
+
+
+### Features
+
+* add operator lerp ([c13bdcd](https://github.com/ckapps/rxjs/commit/c13bdcd445a8681de737106255cb89ff6128f254))
+* **math:** add heaviside operator ([ff0d9fa](https://github.com/ckapps/rxjs/commit/ff0d9fa8aab245cdfec87af4b37fbb8150e640e6))
+
 ### [0.0.16](https://github.com/ckapps/rxjs/compare/v0.0.15...v0.0.16) (2021-02-24)
 
 
