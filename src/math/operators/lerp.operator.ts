@@ -12,7 +12,7 @@ import { lerp as _lerp } from '@ckapp/math';
  *
  *
  * @example
- * // Collect 3 values, then emit average
+ * // Emit linearly interpolated value
  * of(-1, 0, 0.5, 1, 2).pipe(lerp(0, 10))
  * // (aabcc|)  -> a: 0, b: 5, c: 10
  */
