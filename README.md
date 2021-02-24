@@ -1,5 +1,5 @@
 ![CI](https://github.com/ckapps/rxjs/workflows/CI/badge.svg)
-[![npm version](https://badge.fury.io/js/%40ckapp%2Frxjs.svg)](https://www.npmjs.com/@ckapp/rxjs-snafu)
+[![npm version](https://badge.fury.io/js/%40ckapp%2Frxjs-snafu.svg)](https://www.npmjs.com/@ckapp/rxjs-snafu)
 [![Coverage Status](https://coveralls.io/repos/github/ckapps/rxjs/badge.svg?branch=master)](https://coveralls.io/github/ckapps/rxjs?branch=master)
 
 # @ckapp/rxjs-snafu
