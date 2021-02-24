@@ -1,4 +1,3 @@
-import { of } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 
 import { avg } from './avg.operator';
@@ -8,15 +7,13 @@ describe('math/operators/avg', () => {
 
   beforeEach(() => {
     testScheduler = new TestScheduler((actual, expected) => {
-      // console.log('actual', actual);
       expect(actual).toEqual(expected);
     });
   });
 
   it('should average values', () => {
-    const source$ = of([10, 10], [0, 10]).pipe(avg());
-
-    testScheduler.run(({ expectObservable }) => {
+    testScheduler.run(({ expectObservable, cold }) => {
+      const source$ = cold('(ab|)', { a: [10, 10], b: [0, 10] }).pipe(avg());
       const expectedMarble = '(ab|)';
       const expectedIngredients = {
         a: 10,

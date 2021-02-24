@@ -1,4 +1,3 @@
-import { of } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 
 import { lerp } from './lerp.operator';
