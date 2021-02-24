@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/ckapps/rxjs/compare/v0.0.15...v0.0.16) (2021-02-24)
+
+
+### Bug Fixes
+
+* **input:** simplify API for keyboard events ([336035b](https://github.com/ckapps/rxjs/commit/336035b073ffb5f3bc3bccaefcaea7fbe634d6b7))
+* **math:** let start be the first emitted value for counterIncrease ([7f7c547](https://github.com/ckapps/rxjs/commit/7f7c547579e5931070cd850ca5007d2a6891ef40))
+
 ### [0.0.15](https://github.com/ckapps/rxjs/compare/v0.0.14...v0.0.15) (2021-02-24)
 
 
