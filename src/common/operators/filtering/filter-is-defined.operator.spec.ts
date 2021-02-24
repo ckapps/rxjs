@@ -1,20 +1,18 @@
-import { of } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 
 import { filterIsDefined } from './filter-is-defined.operator';
 
 describe('common/operators/filter-is-defined', () => {
   let testScheduler: TestScheduler;
-  const values = [0, '0', false, undefined, null, 1, '1', {}];
-  const expectedValues = {
-    a: values[0],
-    b: values[1],
-    c: values[2],
-    d: values[3],
-    e: values[4],
-    f: values[5],
-    g: values[6],
-    h: values[7],
+  const values = {
+    a: 0,
+    b: '0',
+    c: false,
+    d: undefined,
+    e: null,
+    f: 1,
+    g: '1',
+    h: {},
   };
 
   beforeEach(() => {
@@ -24,11 +22,11 @@ describe('common/operators/filter-is-defined', () => {
   });
 
   it('should filter items', () => {
-    testScheduler.run(({ expectObservable }) => {
-      const source$ = of(...values).pipe(filterIsDefined());
+    testScheduler.run(({ expectObservable, cold }) => {
+      const source$ = cold('(abcdefgh|)', values).pipe(filterIsDefined());
 
       const expectedMarble = '(abcefgh|)';
-      expectObservable(source$).toBe(expectedMarble, expectedValues);
+      expectObservable(source$).toBe(expectedMarble, values);
     });
   });
 });

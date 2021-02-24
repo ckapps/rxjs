@@ -1,4 +1,4 @@
-import { OperatorFunction } from 'rxjs';
+import { MonoTypeOperatorFunction } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { clamp } from '@ckapp/math';
@@ -12,6 +12,6 @@ import { clamp } from '@ckapp/math';
 export function clampTo(
   min: number,
   max: number,
-): OperatorFunction<number, number> {
+): MonoTypeOperatorFunction<number> {
   return map(value => clamp(min, max, value));
 }
