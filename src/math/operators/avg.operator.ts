@@ -12,8 +12,8 @@ import { avg as mathAvg } from '@ckapp/math';
  * array of numbers emitted by the source observable
  *
  * @example
- * // Collect 3 values, then emit average
- * of(1, 2, 3).pipe(avg())
+ * // Map emitted values to average
+ * of([1, 2, 3]).pipe(avg())
  * // (a|)  -> a: 2
  */
 export function avg(): OperatorFunction<number[], number> {
