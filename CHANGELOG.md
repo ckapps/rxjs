@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/ckapps/rxjs/compare/v0.0.17...v0.0.18) (2021-03-08)
+
+
+### Features
+
+* **array:** add operator switch-expand-items ([42613a7](https://github.com/ckapps/rxjs/commit/42613a78744ae95180a70c380924f7a4c6b47aff))
+
 ### [0.0.17](https://github.com/ckapps/rxjs/compare/v0.0.16...v0.0.17) (2021-02-24)
 
 
