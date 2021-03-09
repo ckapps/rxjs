@@ -1,3 +1,4 @@
+export * from './array-concat.operator';
 export * from './collect-array.operator';
 export * from './map-filter.operator';
 export * from './map-items.operator';
