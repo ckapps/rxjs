@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://github.com/ckapps/rxjs/compare/v0.0.19...v0.0.20) (2021-03-09)
+
+
+### Features
+
+* **array:** add operator array concat ([56a5fac](https://github.com/ckapps/rxjs/commit/56a5faccfac569b4b7d5c6fa90ddab7d73507616))
+
 ### [0.0.19](https://github.com/ckapps/rxjs/compare/v0.0.18...v0.0.19) (2021-03-09)
 
 
