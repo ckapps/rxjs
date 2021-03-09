@@ -1,4 +1,3 @@
-import { toArray } from 'rxjs/operators';
 import { TestScheduler } from 'rxjs/testing';
 
 import { collectArray } from './collect-array.operator';
