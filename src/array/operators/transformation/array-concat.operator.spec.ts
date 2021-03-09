@@ -1,6 +1,6 @@
 import { TestScheduler } from 'rxjs/testing';
 
-import { collectArray } from './collect-array.operator';
+import { arrayConcat } from './array-concat.operator';
 
 describe('array/operators/switch-expand-items', () => {
   let testScheduler: TestScheduler;
@@ -11,6 +11,17 @@ describe('array/operators/switch-expand-items', () => {
     });
   });
 
+  const inputValues = {
+    a: [['a']],
+    b: [['a'], ['b']],
+    c: [['a'], ['b'], ['c']],
+    d: [
+      ['a', 'b'],
+      ['c', 'd'],
+    ],
+    e: [['a', 'b'], ['c', 'd'], ['e']],
+  };
+
   const arrayValues = {
     a: ['a'],
     b: ['a', 'b'],
@@ -19,19 +30,10 @@ describe('array/operators/switch-expand-items', () => {
     e: ['a', 'b', 'c', 'd', 'e'],
   };
 
-  it('should collect array without seed', () => {
+  it('should concat array emissions', () => {
     testScheduler.run(({ expectObservable, cold }) => {
       const marbles = '(abc|)';
-      const source$ = cold(marbles).pipe(collectArray());
-
-      expectObservable(source$).toBe(marbles, arrayValues);
-    });
-  });
-
-  it('should collect array with seed', () => {
-    testScheduler.run(({ expectObservable, cold }) => {
-      const marbles = '(cde|)';
-      const source$ = cold(marbles).pipe(collectArray(['a', 'b']));
+      const source$ = cold(marbles, inputValues).pipe(arrayConcat());
 
       expectObservable(source$).toBe(marbles, arrayValues);
     });
