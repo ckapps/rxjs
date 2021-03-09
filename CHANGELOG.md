@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/ckapps/rxjs/compare/v0.0.18...v0.0.19) (2021-03-09)
+
+
+### Features
+
+* **array:** add operator collect-array ([add3ed6](https://github.com/ckapps/rxjs/commit/add3ed68a8f506fa3966cf52c231bd97a642b78c))
+
 ### [0.0.18](https://github.com/ckapps/rxjs/compare/v0.0.17...v0.0.18) (2021-03-08)
 
 
