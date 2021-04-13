@@ -48,7 +48,7 @@ export function log<T>(options: TapLogOptions): MonoTypeOperatorFunction<T> {
   const logFn = prefixLogSuffix(logger, prefixes, suffixes)[level];
 
   const logIO: LogFunction = withEmittedValues
-    ? (...args: unknown[]) => (args.length > 0 ? logFn(...args) : logFn())
+    ? (...args: unknown[]) => logFn(...args)
     : () => logFn();
 
   return tap(logIO);

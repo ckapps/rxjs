@@ -26,7 +26,7 @@ describe('log/operators/log-enter-exit', () => {
     });
   });
 
-  it('should ', () => {
+  it('should log with prefixes', () => {
     const debugLogFn$ = new Subject<any>();
     const level = LogLevel.Debug;
     mockLogger[level].mockImplementation(arg1 => {
@@ -40,6 +40,33 @@ describe('log/operators/log-enter-exit', () => {
           level,
           logger: mockLogger,
           prefixes: [],
+          suffixes: [],
+          withEmittedValues: true,
+        }),
+      );
+
+      const expectedMarble = 'bbb';
+      expectObservable(debugLogFn$).toBe(expectedMarble, {
+        a: `- ${mockAction}`,
+        b: `✔ ${mockAction}`,
+      });
+      source$.subscribe();
+    });
+  });
+
+  it('should log with prefixes', () => {
+    const debugLogFn$ = new Subject<any>();
+    const level = LogLevel.Debug;
+    mockLogger[level].mockImplementation(arg1 => {
+      debugLogFn$.next(arg1);
+    });
+
+    testScheduler.run(({ expectObservable, cold }) => {
+      const mockAction = 'action';
+      const source$ = cold('abc|').pipe(
+        logEnterExit(mockAction, {
+          level,
+          logger: mockLogger,
           suffixes: [],
           withEmittedValues: true,
         }),
