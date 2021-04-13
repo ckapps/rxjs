@@ -1,8 +1,7 @@
 import { Subject } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 
-import { Logger, LogLevel } from '../logger.type';
-
+import { LogLevel } from '../logger.type';
 import { logEnterExit } from './log-enter-exit.operator';
 
 describe('log/operators/log-enter-exit', () => {
