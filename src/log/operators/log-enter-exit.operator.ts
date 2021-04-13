@@ -1,7 +1,7 @@
 import { MonoTypeOperatorFunction, of } from 'rxjs';
 import { concatMapTo } from 'rxjs/operators';
 
-import { log$, TapLogOptions } from './log.operator';
+import { log, TapLogOptions } from './log.operator';
 
 /**
  * @param action Action that is running within
@@ -11,7 +11,7 @@ import { log$, TapLogOptions } from './log.operator';
  * Operator function for logging entering and exiting a certain location.
  * Think of actions that are runned.
  */
-export function logEnterExit$<T>(
+export function logEnterExit<T>(
   action: string,
   options: TapLogOptions,
 ): MonoTypeOperatorFunction<T> {
@@ -22,7 +22,7 @@ export function logEnterExit$<T>(
   };
 
   const initialLog$ = of(null).pipe(
-    log$({
+    log({
       ...prepareOptions,
       withEmittedValues: false,
       prefixes: [...prefixes, `- ${action}`],
@@ -32,7 +32,7 @@ export function logEnterExit$<T>(
   return obs$ =>
     initialLog$.pipe(
       concatMapTo(obs$),
-      log$({
+      log({
         ...prepareOptions,
         prefixes: [...prefixes, `✔ ${action}`],
       }),

@@ -36,7 +36,7 @@ export interface TapLogOptions {
  * values provided by the `options`.
  * Logs, whenever the source emits a value.
  */
-export function log$<T>(options: TapLogOptions): MonoTypeOperatorFunction<T> {
+export function log<T>(options: TapLogOptions): MonoTypeOperatorFunction<T> {
   const {
     logger,
     level,
