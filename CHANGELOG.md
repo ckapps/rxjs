@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.23](https://github.com/ckapps/rxjs/compare/v0.0.22...v0.0.23) (2021-04-13)
+
+
+### Bug Fixes
+
+* improve type exports ([e305089](https://github.com/ckapps/rxjs/commit/e305089cb3c72fd7cb54cb3cbe1edbf8e2b93474))
+* minor improvements ([85a4b83](https://github.com/ckapps/rxjs/commit/85a4b831d9eb35096e3a798a4737fabce612c63f))
+
 ### [0.0.22](https://github.com/ckapps/rxjs/compare/v0.0.21...v0.0.22) (2021-04-13)
 
 
