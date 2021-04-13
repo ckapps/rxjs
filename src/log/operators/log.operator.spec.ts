@@ -1,4 +1,5 @@
 import { Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { TestScheduler } from 'rxjs/testing';
 
 import { LogLevel } from '../logger.type';
@@ -45,6 +46,52 @@ describe('log/operators/log', () => {
       );
 
       const expectedMarble = '(abcdefgh)';
+      expectObservable(debugLogFn$).toBe(expectedMarble);
+      source$.subscribe();
+    });
+  });
+
+  it('should log with defaults logger', () => {
+    const debugLogFn$ = new Subject<any>();
+    const level = LogLevel.Debug;
+    mockLogger[level].mockImplementation(arg1 => {
+      debugLogFn$.next(arg1);
+    });
+
+    testScheduler.run(({ expectObservable, cold }) => {
+      const source$ = cold('(abcdefgh|)').pipe(
+        log({
+          level,
+          logger: mockLogger,
+        }),
+      );
+
+      const expectedMarble = '(abcdefgh)';
+      expectObservable(debugLogFn$).toBe(expectedMarble);
+      source$.subscribe();
+    });
+  });
+
+  it('should log with prefixes', () => {
+    const debugLogFn$ = new Subject<any>();
+    const level = LogLevel.Debug;
+    mockLogger[level].mockImplementation(arg1 => {
+      debugLogFn$.next(arg1);
+    });
+
+    testScheduler.run(({ expectObservable, cold }) => {
+      const source$ = cold('(abcdefgh|)').pipe(
+        map(() => {
+          return;
+        }),
+        log({
+          level,
+          logger: mockLogger,
+          prefixes: ['a'],
+        }),
+      );
+
+      const expectedMarble = '(aaaaaaaa)';
       expectObservable(debugLogFn$).toBe(expectedMarble);
       source$.subscribe();
     });
