@@ -17,6 +17,14 @@ Check our [branching and release strategy](https://github.com/ckapps/.github/blo
 
 ## Installation and Usage
 
+### Prerequisits
+
+If you want to use `rxjs-snafu` in our application, make sure that you also install `rxjs` using
+
+```sh
+npm i rxjs
+```
+
 ### ES6 via npm
 
 ```sh
