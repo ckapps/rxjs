@@ -1,7 +1,7 @@
 {
   "name": "@ckapp/rxjs-snafu",
   "description": "A collection of RxJS extensions",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "license": "MIT",
   "author": "Chris",
   "bugs": {
