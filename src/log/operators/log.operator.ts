@@ -51,5 +51,5 @@ export function log<T>(options: TapLogOptions): MonoTypeOperatorFunction<T> {
     ? (...args: unknown[]) => logFn(...args)
     : () => logFn();
 
-  return tap(logIO);
+  return tap<T>(logIO);
 }
