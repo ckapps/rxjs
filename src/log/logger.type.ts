@@ -1,7 +1,7 @@
 /**
  * Function that performs a logging action
  */
-export type LogFunction = (...params: any[]) => void;
+export type LogFunction = (...params: unknown[]) => void;
 
 /**
  * Logging level

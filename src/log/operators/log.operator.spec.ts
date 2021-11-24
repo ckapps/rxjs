@@ -28,7 +28,7 @@ describe('log/operators/log', () => {
   });
 
   it('should log on logger', () => {
-    const debugLogFn$ = new Subject<any>();
+    const debugLogFn$ = new Subject<unknown>();
     const level = LogLevel.Debug;
     mockLogger[level].mockImplementation(arg1 => {
       debugLogFn$.next(arg1);
@@ -52,7 +52,7 @@ describe('log/operators/log', () => {
   });
 
   it('should log with defaults logger', () => {
-    const debugLogFn$ = new Subject<any>();
+    const debugLogFn$ = new Subject<unknown>();
     const level = LogLevel.Debug;
     mockLogger[level].mockImplementation(arg1 => {
       debugLogFn$.next(arg1);
@@ -73,7 +73,7 @@ describe('log/operators/log', () => {
   });
 
   it('should log with prefixes', () => {
-    const debugLogFn$ = new Subject<any>();
+    const debugLogFn$ = new Subject<unknown>();
     const level = LogLevel.Debug;
     mockLogger[level].mockImplementation(arg1 => {
       debugLogFn$.next(arg1);
