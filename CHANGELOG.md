@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.39](https://github.com/ckapps/rxjs/compare/v0.0.38...v0.0.39) (2021-11-24)
+
+
+### Bug Fixes
+
+* add generic type T for tap ([47e7809](https://github.com/ckapps/rxjs/commit/47e7809ed4fcc53f8d9a51ac85c49ad9713374a2))
+
 ### [0.0.38](https://github.com/ckapps/rxjs/compare/v0.0.37...v0.0.38) (2021-11-24)
 
 ### [0.0.37](https://github.com/ckapps/rxjs/compare/v0.0.36...v0.0.37) (2021-11-24)
