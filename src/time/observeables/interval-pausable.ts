@@ -1,5 +1,5 @@
 import { EMPTY, Observable, SchedulerLike, timer } from 'rxjs';
-import { switchMap, tap } from 'rxjs/operators';
+import { distinctUntilChanged, switchMap, tap } from 'rxjs/operators';
 
 import { counterIncrease } from '../../math/operators';
 
@@ -22,6 +22,7 @@ export function intervalPausable(
   let lastEmit: number = Date.now();
 
   return paused$.pipe(
+    distinctUntilChanged(),
     switchMap(paused => {
       if (paused) {
         // Calculate time left before the next emit
