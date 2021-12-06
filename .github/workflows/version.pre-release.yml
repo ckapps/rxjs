@@ -21,7 +21,7 @@ jobs:
           persist-credentials: false
           # otherwise, you will failed to push refs to dest repo
           fetch-depth: 0
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2.5.0
       - name: install
         run: npm ci
       - name: Run standard-version
