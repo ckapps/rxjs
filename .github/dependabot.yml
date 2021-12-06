@@ -12,3 +12,9 @@ updates:
     ignore:
       # Fixed to same version as Angular
       - dependency-name: 'rxjs'
+
+  ## Keeping GitHub Actions up-to-date
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
