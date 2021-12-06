@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.44](https://github.com/ckapps/rxjs/compare/v0.0.43...v0.0.44) (2021-12-06)
+
+
+### Bug Fixes
+
+* **time:** only listen for changes in signal ([d5e1663](https://github.com/ckapps/rxjs/commit/d5e16639392abe9feaece3546f296604d76c5e62))
+
 ### [0.0.43](https://github.com/ckapps/rxjs/compare/v0.0.42...v0.0.43) (2021-12-06)
 
 ### [0.0.42](https://github.com/ckapps/rxjs/compare/v0.0.41...v0.0.42) (2021-12-06)
