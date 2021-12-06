@@ -45,9 +45,9 @@
     "jest": "^26.4.2",
     "lint-staged": "^12.1.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.1.1",
-    "rxjs": "^6.6.6",
-    "shx": "^0.3.2",
+    "prettier": "^2.5.1",
+    "rxjs": "~6.6.6",
+    "shx": "^0.3.3",
     "standard-version": "^9.3.2",
     "ts-jest": "^26.3.0",
     "tslib": "^2.3.1",
@@ -66,9 +66,9 @@
     "README.md"
   ],
   "dependencies": {
-    "@ckapp/math": "^0.0.33"
+    "@ckapp/math": "^0.0.39"
   },
   "peerDependencies": {
-    "rxjs": "^6.6.6"
+    "rxjs": "~6.6.6"
   }
 }
