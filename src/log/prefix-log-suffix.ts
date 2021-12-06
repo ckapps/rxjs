@@ -13,15 +13,17 @@ export function prefixLogSuffix(
   prefixes: unknown[] = [],
   suffixes: unknown[] = [],
 ): Logger {
-  const logFn = (fnName: keyof Logger) => (...args: unknown[]) => {
-    const loggedValues = [...prefixes];
-    if (args.length > 0) {
-      loggedValues.push(...args);
-    }
-    loggedValues.push(...suffixes);
+  const logFn =
+    (fnName: keyof Logger) =>
+    (...args: unknown[]) => {
+      const loggedValues = [...prefixes];
+      if (args.length > 0) {
+        loggedValues.push(...args);
+      }
+      loggedValues.push(...suffixes);
 
-    return logger[fnName](...loggedValues);
-  };
+      return logger[fnName](...loggedValues);
+    };
 
   return {
     debug: logFn(LogLevel.Debug),

@@ -1,4 +1,4 @@
-import { fromKeyboard } from './from-keyboard';
+import { fromKeyboard, Target } from './from-keyboard';
 
 import * as rxjs from 'rxjs';
 
@@ -6,15 +6,16 @@ jest.mock('rxjs');
 
 describe('input/from-keyboard', () => {
   const fromEventSpy = jest.spyOn(rxjs, 'fromEvent');
+  const target = jest.fn() as unknown as Target;
 
   it('should call without options', () => {
-    fromKeyboard(window, 'keypress');
-    expect(fromEventSpy).toBeCalledWith(window, 'keypress');
+    fromKeyboard(target, 'keypress');
+    expect(fromEventSpy).toBeCalledWith(target, 'keypress');
   });
 
   it('should call with options', () => {
     const options = { passive: true };
-    fromKeyboard(window, 'keypress', options);
-    expect(fromEventSpy).toBeCalledWith(window, 'keypress', options);
+    fromKeyboard(target, 'keypress', options);
+    expect(fromEventSpy).toBeCalledWith(target, 'keypress', options);
   });
 });
