@@ -9,6 +9,13 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'monthly'
+    commit-message:
+      prefix: 'fix'
+      prefix-development: 'chore'
+      include: 'scope'
+    labels:
+      - 'dependencies'
+      - ':gear: npm'
     ignore:
       # Fixed to same version as Angular
       - dependency-name: 'rxjs'
@@ -18,3 +25,9 @@ updates:
     directory: '/'
     schedule:
       interval: 'monthly'
+    commit-message:
+      prefix: 'ci'
+      include: 'scope'
+    labels:
+      - 'dependencies'
+      - ':rocket: ci'
