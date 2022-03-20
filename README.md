@@ -1,6 +1,16 @@
-![CI](https://github.com/ckapps/rxjs/workflows/CI/badge.svg)
-[![npm version](https://badge.fury.io/js/%40ckapp%2Frxjs-snafu.svg)](https://www.npmjs.com/@ckapp/rxjs-snafu)
-[![Coverage Status](https://coveralls.io/repos/github/ckapps/rxjs/badge.svg?branch=master)](https://coveralls.io/github/ckapps/rxjs?branch=master)
+<div style="text-align: center;">
+
+![CI][gh-workflow-main-badge]
+[![Coverage Status][cov-badge]][cov-url]
+[![semantic-release: angular][tool-semantic-release-badge]][tool-semantic-release-url]
+
+</div>
+<div style="text-align: center;">
+
+[![npm version][npm-latest-badge]][npm-latest-url]
+[![npm version][npm-next-badge]][npm-next-url]
+
+</div>
 
 # @ckapp/rxjs-snafu
 
@@ -8,12 +18,21 @@ A collection of extensions for the awesome [RxJS](https://www.npmjs.com/package/
 
 ## Branches / Versions
 
-- [master](https://github.com/ckapps/rxjs/commits/master) - Contains the most recent and unreleased changes
-- [stable](https://github.com/ckapps/rxjs/tree/release/stable/1.x) - Contains the latest version you'd get if you do `npm install @ckapp/rxjs-snafu`
+- [main](https://github.com/ckapps/rxjs/commits/main) - Contains the most recent version
 
-Most PRs should be made to **master**.
+```sh
+npm install @ckapp/rxjs-snafu
+```
 
-Check our [branching and release strategy](https://github.com/ckapps/.github/blob/master/docs/branching.md).
+- [next](https://github.com/ckapps/rxjs/tree/next) - Contains the next version
+
+```sh
+npm install @ckapp/rxjs-snafu@next
+```
+
+Most PRs should be made to `main`.
+
+Check our [branching and release strategy](https://github.com/ckapps/.github/blob/main/docs/branching.md).
 
 ## Installation and Usage
 
@@ -34,3 +53,13 @@ npm i @ckapp/rxjs-snafu
 ## Building/Testing
 
 - `npm test` run tests
+
+[cov-badge]: https://coveralls.io/repos/github/ckapps/rxjs/badge.svg?branch=main
+[cov-url]: (https://coveralls.io/github/ckapps/rxjs?branch=main)
+[gh-workflow-main-badge]: https://github.com/ckapps/rxjs/workflows/CI/badge.svg
+[npm-latest-badge]: https://img.shields.io/npm/v/@ckapp/rxjs-snafu/latest.svg
+[npm-latest-url]: https://www.npmjs.com/@ckapp/rxjs-snafu
+[npm-next-badge]: https://img.shields.io/npm/v/@ckapp/rxjs-snafu/next.svg
+[npm-next-url]: https://www.npmjs.com/@ckapp/rxjs-snafu
+[tool-semantic-release-badge]: https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release
+[tool-semantic-release-url]: https://github.com/semantic-release/semantic-release

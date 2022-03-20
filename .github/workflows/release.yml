@@ -1,26 +1,32 @@
-name: Create Release
-
-on:
+name: Release
+'on':
   push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - 'v**' # Push events to matching v*, i.e. v1.0, v20.15.10
-      - '!v**-*' # but not pre-releases
+    branches:
+      - main
+      - next
+      - beta
+      - alpha
+      - '*.x'
+
+env:
+  # Disable husky
+  HUSKY: 0
 
 jobs:
   release:
-    name: Create Release
+    name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          # This token is provided by Actions, you do not need to create your own token
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          draft: false
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+      - run: npm ci
+      - run: npm run build:package
+      - name: Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

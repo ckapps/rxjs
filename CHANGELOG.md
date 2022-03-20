@@ -1,7 +1,5 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
 ### [0.0.48](https://github.com/ckapps/rxjs/compare/v0.0.47...v0.0.48) (2022-01-03)
 
 ### [0.0.47](https://github.com/ckapps/rxjs/compare/v0.0.46...v0.0.47) (2022-01-03)
