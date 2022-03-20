@@ -1,4 +1,4 @@
-Changelog
+# Changelog
 
 ## [0.0.49](https://github.com/ckapps/rxjs/compare/v0.0.48...v0.0.49) (2022-03-20)
 
@@ -7,17 +7,6 @@ Changelog
 
 * **deps:** bump @ckapp/math to 0.0.47 ([3a901f0](https://github.com/ckapps/rxjs/commit/3a901f0699bd5b048eff9aefc3a1b2317b7f32d9))
 * **deps:** bump rxjs to 6.6.7 ([1555d8c](https://github.com/ckapps/rxjs/commit/1555d8c941cbbc997354f01735b0cbc29bb5adec))
-
-# Changelog
-
-### [0.0.48](https://github.com/ckapps/rxjs/compare/v0.0.47...v0.0.48) (2022-01-03)
-
-### [0.0.47](https://github.com/ckapps/rxjs/compare/v0.0.46...v0.0.47) (2022-01-03)
-
-### [0.0.46](https://github.com/ckapps/rxjs/compare/v0.0.45...v0.0.46) (2022-01-03)
-
-### [0.0.45](https://github.com/ckapps/rxjs/compare/v0.0.44...v0.0.45) (2022-01-03)
-
 ### [0.0.44](https://github.com/ckapps/rxjs/compare/v0.0.43...v0.0.44) (2021-12-06)
 
 
@@ -25,50 +14,12 @@ Changelog
 
 * **time:** only listen for changes in signal ([d5e1663](https://github.com/ckapps/rxjs/commit/d5e16639392abe9feaece3546f296604d76c5e62))
 
-### [0.0.43](https://github.com/ckapps/rxjs/compare/v0.0.42...v0.0.43) (2021-12-06)
-
-### [0.0.42](https://github.com/ckapps/rxjs/compare/v0.0.41...v0.0.42) (2021-12-06)
-
-### [0.0.41](https://github.com/ckapps/rxjs/compare/v0.0.40...v0.0.41) (2021-12-06)
-
-### [0.0.40](https://github.com/ckapps/rxjs/compare/v0.0.39...v0.0.40) (2021-11-24)
-
 ### [0.0.39](https://github.com/ckapps/rxjs/compare/v0.0.38...v0.0.39) (2021-11-24)
 
 
 ### Bug Fixes
 
 * add generic type T for tap ([47e7809](https://github.com/ckapps/rxjs/commit/47e7809ed4fcc53f8d9a51ac85c49ad9713374a2))
-
-### [0.0.38](https://github.com/ckapps/rxjs/compare/v0.0.37...v0.0.38) (2021-11-24)
-
-### [0.0.37](https://github.com/ckapps/rxjs/compare/v0.0.36...v0.0.37) (2021-11-24)
-
-### [0.0.36](https://github.com/ckapps/rxjs/compare/v0.0.35...v0.0.36) (2021-11-24)
-
-### [0.0.35](https://github.com/ckapps/rxjs/compare/v0.0.34...v0.0.35) (2021-11-24)
-
-### [0.0.34](https://github.com/ckapps/rxjs/compare/v0.0.33...v0.0.34) (2021-11-23)
-
-### [0.0.33](https://github.com/ckapps/rxjs/compare/v0.0.32...v0.0.33) (2021-11-23)
-
-### [0.0.32](https://github.com/ckapps/rxjs/compare/v0.0.31...v0.0.32) (2021-11-23)
-
-### [0.0.31](https://github.com/ckapps/rxjs/compare/v0.0.30...v0.0.31) (2021-11-23)
-
-### [0.0.30](https://github.com/ckapps/rxjs/compare/v0.0.29...v0.0.30) (2021-11-23)
-
-### [0.0.29](https://github.com/ckapps/rxjs/compare/v0.0.28...v0.0.29) (2021-11-23)
-
-### [0.0.28](https://github.com/ckapps/rxjs/compare/v0.0.27...v0.0.28) (2021-11-23)
-
-### [0.0.27](https://github.com/ckapps/rxjs/compare/v0.0.26...v0.0.27) (2021-11-23)
-
-### [0.0.26](https://github.com/ckapps/rxjs/compare/v0.0.25...v0.0.26) (2021-11-23)
-
-### [0.0.25](https://github.com/ckapps/rxjs/compare/v0.0.24...v0.0.25) (2021-07-01)
-
-### [0.0.24](https://github.com/ckapps/rxjs/compare/v0.0.23...v0.0.24) (2021-04-24)
 
 ### [0.0.23](https://github.com/ckapps/rxjs/compare/v0.0.22...v0.0.23) (2021-04-13)
 
@@ -84,8 +35,6 @@ Changelog
 ### Features
 
 * add logging facilities ([e216489](https://github.com/ckapps/rxjs/commit/e2164895a126663b64059494ed29ad7fbb4f49a4))
-
-### [0.0.21](https://github.com/ckapps/rxjs/compare/v0.0.20...v0.0.21) (2021-04-01)
 
 ### [0.0.20](https://github.com/ckapps/rxjs/compare/v0.0.19...v0.0.20) (2021-03-09)
 
@@ -132,22 +81,12 @@ Changelog
 * **array:** add operator mapToEvery ([025ed51](https://github.com/ckapps/rxjs/commit/025ed5113c26c08b09d4ad737aff3f6f8210826c))
 * **array:** add operator mapToSome ([8e9310d](https://github.com/ckapps/rxjs/commit/8e9310d4300b723e2a1b5fb9d431538e704a6e9a))
 
-### [0.0.14](https://github.com/ckapps/rxjs/compare/v0.0.13...v0.0.14) (2021-01-08)
-
-### [0.0.13](https://github.com/ckapps/rxjs/compare/v0.0.12...v0.0.13) (2020-12-15)
-
 ### [0.0.12](https://github.com/ckapps/rxjs/compare/v0.0.11...v0.0.12) (2020-11-16)
 
 
 ### Bug Fixes
 
 * improve typing ([e213d04](https://github.com/ckapps/rxjs/commit/e213d041eb0c625d7b92f78769702529dfc1e015))
-
-### [0.0.11](https://github.com/ckapps/rxjs/compare/v0.0.10...v0.0.11) (2020-11-16)
-
-### [0.0.10](https://github.com/ckapps/rxjs/compare/v0.0.9...v0.0.10) (2020-11-16)
-
-### [0.0.9](https://github.com/ckapps/rxjs/compare/v0.0.8...v0.0.9) (2020-11-09)
 
 ### [0.0.8](https://github.com/ckapps/rxjs/compare/v0.0.7...v0.0.8) (2020-11-08)
 
@@ -158,8 +97,6 @@ Changelog
 * **string:** add operator filter-includes ([7539602](https://github.com/ckapps/rxjs/commit/7539602932d413179121187ba72575d8b9101e88))
 * **string:** add operator filter-starts-with ([0c57fde](https://github.com/ckapps/rxjs/commit/0c57fdef645deba39ac0917295d7f51ca3e214d5))
 
-### [0.0.7](https://github.com/ckapps/rxjs/compare/v0.0.6...v0.0.7) (2020-11-08)
-
 ### [0.0.6](https://github.com/ckapps/rxjs/compare/v0.0.5...v0.0.6) (2020-11-08)
 
 
@@ -169,8 +106,6 @@ Changelog
 * **array:** add operator map-items ([b10be9e](https://github.com/ckapps/rxjs/commit/b10be9ed84a04a6980d158858812c34013512402))
 * **array:** add operator map-to-strings-that-end-with ([31400a9](https://github.com/ckapps/rxjs/commit/31400a9f3f49df77bf9ed41263c3717c26c90a51))
 * **array:** add operator map-to-strings-that-start-with ([2d24e70](https://github.com/ckapps/rxjs/commit/2d24e70b904617c16304ab4a464b5d67342b2b08))
-
-### [0.0.5](https://github.com/ckapps/rxjs/compare/v0.0.4...v0.0.5) (2020-09-20)
 
 ### [0.0.4](https://github.com/ckapps/rxjs/compare/v0.0.3...v0.0.4) (2020-09-20)
 
@@ -190,18 +125,12 @@ Changelog
 * minor improvement on interval API ([e142479](https://github.com/ckapps/rxjs/commit/e142479188e127a5c63782d526244493d193f2e7))
 * remove emission-counter operator ([2201770](https://github.com/ckapps/rxjs/commit/220177026afdfe0320f8db27d1ff535be2e3d00b))
 
-### [0.0.3](https://github.com/ckapps/rxjs/compare/v0.0.2...v0.0.3) (2020-09-17)
-
 ### [0.0.2](https://github.com/ckapps/rxjs/compare/v0.0.2-23...v0.0.2) (2020-09-17)
 
 
 ### Bug Fixes
 
 * ci release workflow ([de8aa36](https://github.com/ckapps/rxjs/commit/de8aa3642d703e5ebc52fa2f5e02c27034c96c03))
-
-### [0.0.2-23](https://github.com/ckapps/rxjs/compare/v0.0.2-22...v0.0.2-23) (2020-09-17)
-
-### [0.0.2-22](https://github.com/ckapps/rxjs/compare/v0.0.2-21...v0.0.2-22) (2020-09-17)
 
 ### [0.0.2-21](https://github.com/ckapps/rxjs/compare/v0.0.2-19...v0.0.2-21) (2020-09-17)
 
@@ -225,20 +154,6 @@ Changelog
 ### Features
 
 * add array operators ([4cf231e](https://github.com/ckapps/rxjs/commit/4cf231e4a64dfafd4b7e53b3b704859251fcd062))
-
-### [0.0.2-18](https://github.com/ckapps/rxjs/compare/v0.0.2-17...v0.0.2-18) (2020-09-17)
-
-### [0.0.2-17](https://github.com/ckapps/rxjs/compare/v0.0.2-16...v0.0.2-17) (2020-09-17)
-
-### [0.0.2-16](https://github.com/ckapps/rxjs/compare/v0.0.2-15...v0.0.2-16) (2020-09-17)
-
-### [0.0.2-15](https://github.com/ckapps/rxjs/compare/v0.0.2-14...v0.0.2-15) (2020-09-16)
-
-### [0.0.2-14](https://github.com/ckapps/rxjs/compare/v0.0.2-13...v0.0.2-14) (2020-09-16)
-
-### [0.0.2-13](https://github.com/ckapps/rxjs/compare/v0.0.2-12...v0.0.2-13) (2020-09-16)
-
-### [0.0.2-12](https://github.com/ckapps/rxjs/compare/v0.0.2-11...v0.0.2-12) (2020-09-16)
 
 ### 0.0.2-11 (2020-09-16)
 
