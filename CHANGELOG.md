@@ -1,5 +1,12 @@
 Changelog
 
+# [0.1.0](https://github.com/ckapps/rxjs/compare/v0.0.49...v0.1.0) (2022-03-20)
+
+
+### Features
+
+* **string:** add operator `filterMatch` ([abe0378](https://github.com/ckapps/rxjs/commit/abe03780d8aa8067c504f35a2c387d15957fb475))
+
 ## [0.0.49](https://github.com/ckapps/rxjs/compare/v0.0.48...v0.0.49) (2022-03-20)
 
 
