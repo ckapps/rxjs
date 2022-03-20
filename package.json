@@ -67,7 +67,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@ckapp/math": "^0.0.39"
+    "@ckapp/math": "^0.0.47"
   },
   "peerDependencies": {
     "rxjs": "~6.6.7"
