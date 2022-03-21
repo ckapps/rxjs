@@ -55,7 +55,7 @@ npm i @ckapp/rxjs-snafu
 - `npm test` run tests
 
 [cov-badge]: https://coveralls.io/repos/github/ckapps/rxjs/badge.svg?branch=main
-[cov-url]: (https://coveralls.io/github/ckapps/rxjs?branch=main)
+[cov-url]: https://coveralls.io/github/ckapps/rxjs?branch=main
 [gh-workflow-main-badge]: https://github.com/ckapps/rxjs/workflows/CI/badge.svg
 [npm-latest-badge]: https://img.shields.io/npm/v/@ckapp/rxjs-snafu/latest.svg
 [npm-latest-url]: https://www.npmjs.com/@ckapp/rxjs-snafu
