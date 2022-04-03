@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/ckapps/rxjs/compare/v0.1.0...v0.1.1) (2022-04-03)
+
+
+### Bug Fixes
+
+* **deps:** bump @ckapp/math from 0.0.47 to 0.0.48 ([0eeeacc](https://github.com/ckapps/rxjs/commit/0eeeacc9ab69262d40ffe681135d8640f1dc13db))
+* **deps:** bump minimist from 1.2.5 to 1.2.6 ([bb0e39a](https://github.com/ckapps/rxjs/commit/bb0e39a50b19ff3f23d67743052624939882d6b4))
+
 # [0.1.0](https://github.com/ckapps/rxjs/compare/v0.0.49...v0.1.0) (2022-03-20)
 
 
