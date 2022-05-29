@@ -1,4 +1,5 @@
 module.exports = {
+  maxWorkers: '25%',
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
