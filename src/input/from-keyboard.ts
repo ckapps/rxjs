@@ -1,13 +1,13 @@
 import { fromEvent } from 'rxjs';
 import {
   EventListenerOptions,
-  FromEventTarget,
+  HasEventTargetAddRemove,
 } from 'rxjs/internal/observable/fromEvent';
 
 /**
  * Target for the listener
  */
-export type Target = FromEventTarget<KeyboardEvent>;
+export type Target = HasEventTargetAddRemove<KeyboardEvent>;
 /**
  * Possible event types
  */
