@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/ckapps/rxjs/compare/v0.1.2...v0.1.3) (2022-05-29)
+
+
+### Bug Fixes
+
+* **deps:** bump `rxjs` to 7.5 ([#110](https://github.com/ckapps/rxjs/issues/110)) ([14813d1](https://github.com/ckapps/rxjs/commit/14813d1b20855053b2fa0a29f23854db282cb5bd))
+
 ## [0.1.2](https://github.com/ckapps/rxjs/compare/v0.1.1...v0.1.2) (2022-05-29)
 
 
