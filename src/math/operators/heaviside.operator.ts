@@ -13,5 +13,5 @@ import { heaviside as _heaviside } from '@ckapp/math';
  * // (aabbb|)  -> a: 0, b: 1
  */
 export function heaviside(): OperatorFunction<number, 0 | 1> {
-  return map(t => _heaviside(t));
+  return map(_heaviside);
 }
