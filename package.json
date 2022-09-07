@@ -1,7 +1,7 @@
 {
   "name": "@ckapp/rxjs-snafu",
   "description": "A collection of RxJS extensions",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "author": "Chris",
   "bugs": {
@@ -67,7 +67,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@ckapp/math": "^0.0.49"
+    "@ckapp/math": "^0.0.53"
   },
   "peerDependencies": {
     "rxjs": "~7.5.6"
