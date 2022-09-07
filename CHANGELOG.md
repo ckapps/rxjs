@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/ckapps/rxjs/compare/v0.1.5...v0.1.6) (2022-09-07)
+
+
+### Performance Improvements
+
+* **math:** remove unnecessary closure fn ([e00b911](https://github.com/ckapps/rxjs/commit/e00b911a91b9e5a56ad65565e56d9e70684736b3))
+
 ## [0.1.5](https://github.com/ckapps/rxjs/compare/v0.1.4...v0.1.5) (2022-09-07)
 
 
