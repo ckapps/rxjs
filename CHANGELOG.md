@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/ckapps/rxjs/compare/v0.1.4...v0.1.5) (2022-09-07)
+
+
+### Bug Fixes
+
+* **math:** improve typing for module operator ([0f04690](https://github.com/ckapps/rxjs/commit/0f04690075b7b377e4ceb906eca13c4ab8152957))
+
 ## [0.1.4](https://github.com/ckapps/rxjs/compare/v0.1.3...v0.1.4) (2022-09-07)
 
 
