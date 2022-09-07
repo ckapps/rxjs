@@ -6,6 +6,6 @@ import { map } from 'rxjs/operators';
  * where the first is the `dividend` and the second the `divisor`.
  */
 
-export function modulo(): OperatorFunction<number[], number> {
+export function modulo(): OperatorFunction<[number, number], number> {
   return map(([a, n]) => a % n);
 }
