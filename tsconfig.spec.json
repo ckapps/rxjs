@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.base.json",
+  "extends": "./src/tsconfig.base.json",
   "compilerOptions": {
     "module": "esnext",
     "importHelpers": true,
