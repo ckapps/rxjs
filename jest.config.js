@@ -11,9 +11,4 @@ module.exports = {
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
-  globals: {
-    'ts-jest': {
-      tsconfig: './src/tsconfig.spec.json',
-    },
-  },
 };
