@@ -51,7 +51,6 @@
     "semantic-release": "^19.0.5",
     "shx": "^0.3.4",
     "ts-jest": "^28.0.8",
-    "tslib": "^2.4.0",
     "typescript": "^4.8.2"
   },
   "files": [
@@ -67,7 +66,8 @@
     "README.md"
   ],
   "dependencies": {
-    "@ckapp/math": "^0.0.55"
+    "@ckapp/math": "^0.0.55",
+    "tslib": "^2.4.1"
   },
   "peerDependencies": {
     "rxjs": "~7.5.6"
