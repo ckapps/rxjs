@@ -1,3 +1,4 @@
+import { describe, expect, it, jest } from '@jest/globals';
 import { fromKeyboard, Target } from './from-keyboard';
 
 import * as rxjs from 'rxjs';
