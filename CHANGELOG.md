@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/ckapps/rxjs/compare/v0.1.7...v0.1.8) (2023-01-08)
+
+
+### Bug Fixes
+
+* **deps:** make `tslib` runtime dependency ([#187](https://github.com/ckapps/rxjs/issues/187)) ([61778a7](https://github.com/ckapps/rxjs/commit/61778a78184fc1d1a300de81f6955435f57c3ff7)), closes [#186](https://github.com/ckapps/rxjs/issues/186)
+
 ## [0.1.7](https://github.com/ckapps/rxjs/compare/v0.1.6...v0.1.7) (2023-01-08)
 
 
