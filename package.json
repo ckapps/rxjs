@@ -66,7 +66,7 @@
   ],
   "dependencies": {
     "@ckapp/math": "^0.0.55",
-    "tslib": "^2.4.1"
+    "tslib": "^2.5.0"
   },
   "peerDependencies": {
     "rxjs": "~7.5.6"
