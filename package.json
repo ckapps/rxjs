@@ -65,7 +65,7 @@
     "README.md"
   ],
   "dependencies": {
-    "@ckapp/math": "^0.0.55",
+    "@ckapp/math": "^0.0.57",
     "tslib": "^2.5.0"
   },
   "peerDependencies": {
