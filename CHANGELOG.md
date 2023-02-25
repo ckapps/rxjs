@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.9](https://github.com/ckapps/rxjs/compare/v0.1.8...v0.1.9) (2023-02-25)
+
+
+### Bug Fixes
+
+* **deps:** bump `@ckapp/math` to 0.0.57 ([e11b2d4](https://github.com/ckapps/rxjs/commit/e11b2d4a402a023e0fdf6b712cf1648a2f555833))
+* **deps:** bump tslib from 2.4.1 to 2.5.0 ([3355d58](https://github.com/ckapps/rxjs/commit/3355d58208552e8a104ba68e0f006e34cf169798))
+* **peer-deps:** allow rxjs minor version > 7.5 ([ee9bcda](https://github.com/ckapps/rxjs/commit/ee9bcda58f7127a60f7c242aaeb9d651dca5a3ee))
+
 ## [0.1.8](https://github.com/ckapps/rxjs/compare/v0.1.7...v0.1.8) (2023-01-08)
 
 
