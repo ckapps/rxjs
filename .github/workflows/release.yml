@@ -2,11 +2,11 @@ name: Release
 'on':
   push:
     branches:
+      - '*.x'
+      - latest
       - main
-      - next
       - beta
       - alpha
-      - '*.x'
 
 env:
   # Disable husky
