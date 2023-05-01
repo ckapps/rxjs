@@ -18,16 +18,16 @@ A collection of extensions for the awesome [RxJS](https://www.npmjs.com/package/
 
 ## Branches / Versions
 
-- [main](https://github.com/ckapps/rxjs/commits/main) - Contains the most recent version
-
-```sh
-npm install @ckapp/rxjs-snafu
-```
-
-- [next](https://github.com/ckapps/rxjs/tree/next) - Contains the next version
+- [main](https://github.com/ckapps/rxjs/commits/main) - Contains the next version
 
 ```sh
 npm install @ckapp/rxjs-snafu@next
+```
+
+- [next](https://github.com/ckapps/rxjs/tree/latest) - Contains the latest stable version
+
+```sh
+npm install @ckapp/rxjs-snafu@latest
 ```
 
 Most PRs should be made to `main`.
