@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/ckapps/rxjs/compare/v0.1.9...v0.1.10) (2023-05-01)
+
+
+### Bug Fixes
+
+* **deps:** bump yaml from 2.2.1 to 2.2.2 ([#227](https://github.com/ckapps/rxjs/issues/227)) ([de8e087](https://github.com/ckapps/rxjs/commit/de8e087702c1e22a2e11f33397c64a9f0d751410))
+
 ## [0.1.9](https://github.com/ckapps/rxjs/compare/v0.1.8...v0.1.9) (2023-02-25)
 
 
