@@ -20,6 +20,6 @@ jobs:
       - name: coverage report
         run: npm run test:coverage
       - name: Coveralls
-        uses: coverallsapp/github-action@v1.2.4
+        uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
