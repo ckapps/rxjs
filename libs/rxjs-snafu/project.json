@@ -1,0 +1,50 @@
+{
+  "name": "rxjs-snafu",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/rxjs-snafu/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "project": "libs/rxjs-snafu/package.json",
+        "outputPath": "dist/libs/rxjs-snafu",
+        "main": "libs/rxjs-snafu/src/index.ts",
+        "tsConfig": "libs/rxjs-snafu/tsconfig.lib.json",
+        "format": ["cjs", "esm"],
+        "generateExportsField": true,
+        "rollupConfig": "libs/rxjs-snafu/rollup.config.cjs",
+        "external": "all",
+        "compiler": "tsc",
+        "additionalEntryPoints": []
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs rxjs-snafu {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/rxjs-snafu/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/rxjs-snafu/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

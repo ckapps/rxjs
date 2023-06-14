@@ -1,3 +1,0 @@
-/**
- * Main index file
- */

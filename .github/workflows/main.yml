@@ -15,14 +15,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-      - name: install
-        run: npm ci
-      - name: lint
-        run: npm run lint
-      - name: build
-        run: npm run build:fast
-      - name: test
-        run: npm test
+      - run: npm ci
+
+      - run: npx nx format:check
+      - run: npx nx affected -t lint --parallel=3
+      - run: npx nx affected -t test --parallel=3 --configuration=ci
+      - run: npx nx affected -t build --parallel=3

@@ -1,0 +1,16 @@
+{
+  "name": "@ckapp/rxjs-snafu",
+  "version": "0.0.1",
+  "description": "A collection of RxJS extensions",
+  "license": "MIT",
+  "author": "Chris",
+  "bugs": {
+    "url": "https://github.com/ckapps/rxjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckapps/rxjs.git"
+  },
+  "type": "module",
+  "sideEffects": false
+}
