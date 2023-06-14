@@ -19,5 +19,3 @@ jobs:
       - run: npx nx test rxjs-snafu -c ci
       - name: Coveralls
         uses: coverallsapp/github-action@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
