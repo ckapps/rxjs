@@ -15,11 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-      - name: npm install
-        run: npm ci
-      - name: coverage report
-        run: npm run test:coverage
+      - run: npm ci
+      - run: npx nx test rxjs-snafu -c ci
       - name: Coveralls
         uses: coverallsapp/github-action@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
